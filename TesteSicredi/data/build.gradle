@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 30
 
     defaultConfig {
         minSdk 19
-        targetSdk 31
+        targetSdk 30
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
@@ -60,7 +60,7 @@ dependencies {
     minApi19Implementation("com.squareup.okhttp3:okhttp") {
         version { strictly("3.12.1") }
     }
-    minApi21Implementation("com.squareup.okhttp3:okhttp:4.9.0")
+    minApi21Implementation("com.squareup.okhttp3:okhttp:4.9.2")
     implementation "com.squareup.retrofit2:retrofit:2.9.0"
     implementation "com.squareup.retrofit2:converter-gson:2.9.0"
 }

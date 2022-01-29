@@ -6,7 +6,7 @@ import com.example.domain.entity.model.CheckIn
 import com.example.domain.interactions.Result
 import java.lang.Exception
 
-class GetCheckingUseCase(
+class GetCheckInUseCase(
     private val repository: EventsRepository
 ) {
     suspend operator fun invoke(checkIn: CheckIn): Result<Boolean> = try {

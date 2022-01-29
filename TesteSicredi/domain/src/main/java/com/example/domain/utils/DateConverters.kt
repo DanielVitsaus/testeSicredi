@@ -8,11 +8,11 @@ import java.time.ZoneOffset
 object DateConverters {
     @JvmStatic
     fun localDateTimeTimeToLong(date: LocalDateTime): Long {
-        return date.toInstant(ZoneOffset.UTC).epochSecond
+        return date.toInstant(ZoneOffset.UTC).toEpochMilli()
     }
 
     @JvmStatic
     fun longToLocalDateTime(value: Long): LocalDateTime {
-        return LocalDateTime.ofInstant(Instant.ofEpochSecond(value), ZoneId.of("UTC"))
+        return LocalDateTime.ofInstant(Instant.ofEpochMilli(value), ZoneId.of("UTC"))
     }
 }

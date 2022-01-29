@@ -1,7 +1,10 @@
 package com.example.domain.entity.model
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 import java.time.LocalDateTime
 
+@Parcelize
 data class Event(
     val id: String,
     val title: String,
@@ -11,4 +14,4 @@ data class Event(
     val latitude: Double,
     val longitude: Double,
     val price: Double
-)
+) : Parcelable

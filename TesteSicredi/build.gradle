@@ -2,38 +2,16 @@
 buildscript {
     ext {
         kotlin_version = "1.6.10"
-        ktx = '1.5.0-alpha04'
-        app_compat = '1.2.0'
-        google_material = '1.2.1'
-        constraint_layout = '2.0.2'
-        annotation = "1.1.0"
-        exif_interface = "1.1.0"
-        pallete = "1.0.0"
-        fragment = '1.2.5'
-        swipe_refresh = '1.1.0'
-        arch = "2.1.0"
-        view_pager = "1.0.0"
-        room = '2.3.0-alpha02'
-        lifecycle = '2.2.0'
-        paging = '3.1.0'
-        navigation = '2.4.0'
-        timber = "4.7.1"
-        glide = '4.12.0'
-        retrofit = '2.9.0'
-        gson = '2.8.6'
-        android_gradle_plugin = '4.1.1'
-        kotlinter = "3.0.2"
-        hilt_dagger = '2.29.1-alpha'
-        play_publisher = "3.0.0"
+
     }
     repositories {
         google()
         maven { url "https://plugins.gradle.org/m2/" }
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:7.0.2"
+        classpath "com.android.tools.build:gradle:7.0.4"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigation"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.4.0"
     }
 }
 
